@@ -1,4 +1,4 @@
-# pi-tensorflow-lite-object-detection
+# pi-tensorflow-lite-object-detection-mk2
 This project builds a **real-time object detection** system using a **Raspberry Pi** and a camera. It captures live video, processes it with a **TensorFlow Lite** model to detect specific objects, and saves important events as video files. To handle these tasks efficiently, it uses **parallel computing** with threading. The system provides visual alerts through LEDs and sound alerts via a buzzer, showcasing its capability **to control real-world actions**, which can also be extended to manage circuits or send signals. A local network server is created for **real-time monitoring**, enabling users to view live video, access saved recordings, and review logs seamlessly.
 
 - **Real-Time Object Detection:** Detects objects in real-time using a TensorFlow Lite model.
@@ -21,29 +21,25 @@ An alternative name of this project is [FLDSMDFR](https://github.com/dafmonteneg
 
 ### Table Of Contents <!-- omit in toc -->
 - [1. General Specifications](#1-general-specifications)
-    - [1.1 Requirements](#11-requirements)
-    - [1.2 Software:](#12-software)
-    - [1.3 Hardware:](#13-hardware)
+  - [1.1 Requirements](#11-requirements)
+  - [1.2 Software:](#12-software)
+  - [1.3 Hardware:](#13-hardware)
 - [2. Usage](#2-usage)
-    - [2.1 Run the System](#21-run-the-system)
-    - [2.2 Access the Web Interface](#22-access-the-web-interface)
+  - [2.1 Run the System](#21-run-the-system)
+  - [2.2 Access the Web Interface](#22-access-the-web-interface)
 - [3. Demo](#3-demo)
-    - [3.1 Human detector](#31-human-detector)
-    - [3.2 Banana detector](#32-banana-detector)
-    - [3.3 Cat detector](#33-cat-detector)
+  - [3.1 Human detector](#31-human-detector)
+  - [3.2 Banana detector](#32-banana-detector)
+  - [3.3 Cat detector](#33-cat-detector)
 - [4. Code](#4-code)
-    - [4.1 class LEDRGB and class LEDSRGB](#41-class-ledrgb-and-class-ledsrgb)
-    - [4.2 class Buzzer](#42-class-buzzer)
-    - [4.3 class ObjectDetector and class Camera](#43-class-objectdetector-and-class-camera)
-    - [4.4 class RealTimeObjectDetection](#44-class-realtimeobjectdetection)
-    - [4.5 class StorageManager](#45-class-storagemanager)
-    - [4.6 Initial Configuration](#46-initial-configuration)
+  - [4.1 class LEDRGB and class LEDSRGB](#41-class-ledrgb-and-class-ledsrgb)
+  - [4.2 class Buzzer](#42-class-buzzer)
+  - [4.3 class ObjectDetector and class Camera](#43-class-objectdetector-and-class-camera)
+  - [4.4 class RealTimeObjectDetection](#44-class-realtimeobjectdetection)
+  - [4.5 class StorageManager](#45-class-storagemanager)
+  - [4.6 Initial Configuration](#46-initial-configuration)
 - [5. Contributing](#5-contributing)
 - [6. References](#6-references)
-
-## Author
-
-- **Daniel Felipe Montenegro** [Website](https://montenegrodanielfelipe.com/) | [GitHub](https://github.com/dafmontenegro)
 
 ## 1. General Specifications
 This repository presents a demonstration of real-time object detection on a **Raspberry Pi** using **TensorFlow Lite**. Inspired by the official **TensorFlow examples library** [1] and the video tutorials by **Paul McWhorter** [2], this project provides a hands-on exploration of object detection capabilities on resource-constrained devices like the **Raspberry Pi platform**.
